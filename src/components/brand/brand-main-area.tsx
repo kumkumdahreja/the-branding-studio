@@ -44,8 +44,8 @@ const brand_data = [
 ];
 
 // Import Autoplay module
-import "swiper/css";
-import "swiper/css/autoplay";
+// import "swiper/css";
+// import "swiper/css/autoplay";
 
 // slider setting - Show more slides at a time
 const slider_setting: SwiperOptions = {
@@ -94,7 +94,7 @@ export default function BrandFour() {
             <div className="section-title-wrapper text-center mb-50">
               <h2 className="tp-section-title-4">Our Valued Clients</h2>
               <p className="tp-section-text">
-                Brands we've had the privilege to work with
+                Brands we have had the privilege to work with
               </p>
             </div>
           </div>

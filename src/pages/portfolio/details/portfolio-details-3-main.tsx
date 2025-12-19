@@ -40,7 +40,7 @@ const PortfolioDetailsThreeMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" whiteFooter={true} />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

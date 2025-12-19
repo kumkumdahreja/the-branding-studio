@@ -143,7 +143,7 @@ const PortfolioDetailsVideoMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="z-index-9" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>
