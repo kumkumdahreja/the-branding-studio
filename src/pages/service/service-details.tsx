@@ -36,7 +36,7 @@ const ServiceDetailsMain = () => {
         <div id="smooth-content">
           <main>
             {/* service details area */}
-            <ServiceDetailsArea />
+            {/* <ServiceDetailsArea /> */}
             {/* service details area */}
 
             {/* big text */}
