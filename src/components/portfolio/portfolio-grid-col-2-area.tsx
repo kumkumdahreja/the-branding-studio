@@ -4,19 +4,12 @@ import Link from "next/link";
 import { UpArrow } from "../svg";
 import { useIsotop } from "@/hooks/use-isotop";
 
-// images
-import port_1 from "/assets/img/inner-project/portfolio-col-2/port_1.jpg";
-import port_2 from "/assets/img/inner-project/portfolio-col-2/port-2.jpg";
-import port_3 from "/assets/img/inner-project/portfolio-col-2/port-3.jpg";
-import port_4 from "/assets/img/inner-project/portfolio-col-2/port-4.jpg";
-import port_5 from "/assets/img/inner-project/portfolio-col-2/port-5.jpg";
-import port_6 from "/assets/img/inner-project/portfolio-col-2/port-6.jpg";
-
 // data
+// NOTE: We reference these from the 'public' folder directly as strings.
 const portfolio_data = [
   {
     id: 1,
-    img: port_1,
+    img: "/assets/img/inner-project/portfolio-col-2/port_1.jpg",
     category: "Shooting",
     title: "Roadtrip",
     year: "2024",
@@ -24,7 +17,7 @@ const portfolio_data = [
   },
   {
     id: 2,
-    img: port_2,
+    img: "/assets/img/inner-project/portfolio-col-2/port-2.jpg",
     category: "Studio",
     title: "Fashion",
     year: "2023",
@@ -32,7 +25,7 @@ const portfolio_data = [
   },
   {
     id: 3,
-    img: port_3,
+    img: "/assets/img/inner-project/portfolio-col-2/port-3.jpg",
     category: "Agency",
     title: "Tesla",
     year: "2022",
@@ -40,7 +33,7 @@ const portfolio_data = [
   },
   {
     id: 4,
-    img: port_4,
+    img: "/assets/img/inner-project/portfolio-col-2/port-4.jpg",
     category: "Studio",
     title: "Cosmetic",
     year: "2024",
@@ -48,7 +41,7 @@ const portfolio_data = [
   },
   {
     id: 5,
-    img: port_5,
+    img: "/assets/img/inner-project/portfolio-col-2/port-5.jpg",
     category: "Visual",
     title: "Porsche",
     year: "2024",
@@ -56,7 +49,7 @@ const portfolio_data = [
   },
   {
     id: 6,
-    img: port_6,
+    img: "/assets/img/inner-project/portfolio-col-2/port-6.jpg",
     category: "Agency",
     title: "Fiedunit",
     year: "2024",
@@ -70,6 +63,7 @@ export default function PortfolioGridColTwoArea() {
   useEffect(() => {
     initIsotop();
   }, [initIsotop]);
+
   return (
     <div className="tp-project-5-2-area tp-project-5-2-pt pb-130">
       <div className="container container-1530">
@@ -100,13 +94,18 @@ export default function PortfolioGridColTwoArea() {
               key={item.id}
               className={`col-xl-6 col-lg-6 col-md-6 grid-item ${item.show}`}
             >
-              <div className="tp-project-5-2-thumb anim-zoomin-wrap mb-30 not-hide-cursor p-relative" data-cursor="View<br>Demo">
+              <div
+                className="tp-project-5-2-thumb anim-zoomin-wrap mb-30 not-hide-cursor p-relative"
+                data-cursor="View<br>Demo"
+              >
                 <Link href="/portfolio-details-1" className="cursor-hide">
                   <Image
                     className="anim-zoomin"
                     src={item.img}
                     alt="port-img"
-                    style={{ height: "auto" }}
+                    width={800} // Added width
+                    height={600} // Added height
+                    style={{ width: "100%", height: "auto" }}
                   />
                   <div className="tp-project-5-2-category tp_fade_anim">
                     <span>{item.category}</span>
