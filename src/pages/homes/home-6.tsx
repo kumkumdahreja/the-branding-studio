@@ -15,7 +15,7 @@ import ShopCategory from "@/components/category/shop-category";
 import ShopBanner from "@/components/shop/shop-banner";
 import ShopProducts from "@/components/shop/shop-products";
 // images
-import banner_img from "/assets/img/inner-shop/banner/banner-3.jpg";
+import banner_img from "@/assets/img/inner-shop/banner/banner-3.jpg";
 import InstagramTwo from "@/components/instagram/instagram-two";
 import BrandFour from "@/components/brand/brand-four";
 import FooterSix from "@/layouts/footers/footer-six";

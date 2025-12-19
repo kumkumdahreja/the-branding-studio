@@ -5,22 +5,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
 
 // Brand logos
-import b_1 from "/assets/img/home-01/brand/amyra-logo.png";
-import b_2 from "/assets/img/home-01/brand/aws-logo.png";
-import b_3 from "/assets/img/home-01/brand/dermabay-logo.png";
-import b_4 from "/assets/img/home-01/brand/flavocia-logo.png";
-import b_5 from "/assets/img/home-01/brand/heal-hub-logo.png";
-import b_6 from "/assets/img/home-01/brand/healin-logo.png";
-import b_7 from "/assets/img/home-01/brand/hotel-kuber-logo.png";
-import b_8 from "/assets/img/home-01/brand/kulcha-kulture-logo.png";
-import b_9 from "/assets/img/home-01/brand/kundan-essentials-logo.png";
-import b_10 from "/assets/img/home-01/brand/kwisaa-logo.png";
-import b_11 from "/assets/img/home-01/brand/nutriherbs-logo.png";
-import b_12 from "/assets/img/home-01/brand/odhni-logo.png";
-import b_13 from "/assets/img/home-01/brand/parsas-logo.png";
-import b_14 from "/assets/img/home-01/brand/shree-balaji-motors-logo.png";
-import b_15 from "/assets/img/home-01/brand/silvora-logo.png";
-import b_16 from "/assets/img/home-01/brand/vastrachowk-logo.png";
+import b_1 from "@/assets/img/home-01/brand/amyra-logo.png";
+import b_2 from "@/assets/img/home-01/brand/aws-logo.png";
+import b_3 from "@/assets/img/home-01/brand/dermabay-logo.png";
+import b_4 from "@/assets/img/home-01/brand/flavocia-logo.png";
+import b_5 from "@/assets/img/home-01/brand/heal-hub-logo.png";
+import b_6 from "@/assets/img/home-01/brand/healin-logo.png";
+import b_7 from "@/assets/img/home-01/brand/hotel-kuber-logo.png";
+import b_8 from "@/assets/img/home-01/brand/kulcha-kulture-logo.png";
+import b_9 from "@/assets/img/home-01/brand/kundan-essentials-logo.png";
+import b_10 from "@/assets/img/home-01/brand/kwisaa-logo.png";
+import b_11 from "@/assets/img/home-01/brand/nutriherbs-logo.png";
+import b_12 from "@/assets/img/home-01/brand/odhni-logo.png";
+import b_13 from "@/assets/img/home-01/brand/parsas-logo.png";
+import b_14 from "@/assets/img/home-01/brand/shree-balaji-motors-logo.png";
+import b_15 from "@/assets/img/home-01/brand/silvora-logo.png";
+import b_16 from "@/assets/img/home-01/brand/vastrachowk-logo.png";
 
 // Brand data with names for alt text
 const brand_data = [

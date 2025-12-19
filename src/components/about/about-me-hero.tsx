@@ -4,9 +4,9 @@ import Social from "../social/social";
 import { Leaf } from "../svg";
 
 // images
-import shape_1 from "/assets/img/inner-about/hero/hero-2-shape-1.jpg";
-import shape_2 from "/assets/img/inner-about/hero/hero-2-shape-2.jpg";
-import hero_img from "/assets/img/inner-about/hero/hero-2-1.jpg";
+import shape_1 from "@/assets/img/inner-about/hero/hero-2-shape-1.jpg";
+import shape_2 from "@/assets/img/inner-about/hero/hero-2-shape-2.jpg";
+import hero_img from '@/assets/img/inner-about/hero/hero-2-1.jpg';
 import Link from "next/link";
 
 export default function AboutMeHero() {
@@ -48,10 +48,17 @@ export default function AboutMeHero() {
                   </span>
                 </Link>
                 <div className="ab-2-hero-shape-1">
-                  <Image src={shape_1} alt="shape" />
+                  <Image
+                    src={shape_1}
+                    alt="shape"
+                  />
                 </div>
                 <div className="ab-2-hero-shape-2">
-                  <Image className="tp-zoom-in-out" src={shape_2} alt="shape" />
+                  <Image
+                    className="tp-zoom-in-out"
+                    src={shape_2}
+                    alt="shape"
+                  />
                 </div>
               </div>
             </div>
@@ -63,7 +70,7 @@ export default function AboutMeHero() {
                   src={hero_img}
                   alt="shape"
                   data-speed="0.9"
-                  style={{ height: "auto" }}
+                  style={{height:"auto"}}
                 />
                 <h4
                   className="ab-2-hero-title tp-char-animation"

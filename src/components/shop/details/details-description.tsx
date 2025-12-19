@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import desc_img from "/assets/img/inner-shop/shop-details/soul.jpg";
+import desc_img from '@/assets/img/inner-shop/shop-details/soul.jpg';
 
 export default function DetailsDescription() {
   return (
@@ -48,7 +48,7 @@ export default function DetailsDescription() {
         </div>
         <div className="col-xl-5 col-lg-6">
           <div className="tp-product-details-dsc-thumb">
-            <Image src={desc_img} alt="desc-img" style={{ height: "auto" }} />
+            <Image src={desc_img} alt="desc-img" style={{height:"auto"}} />
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal imports
-import logo from "/assets/img/logo/logo.png";
-import logo_2 from "/assets/img/logo/logo-white.png";
+import logo from '@/assets/img/logo/logo.png';
+import logo_2 from '@/assets/img/logo/logo-white.png';
 import MobileOffcanvasTwo from "@/components/offcanvas/mobile-offcanvas-2";
 
 // props type
@@ -11,7 +11,7 @@ type IProps = {
   style_2?: boolean;
   container?: string;
 };
-export default function HeaderEight({ style_2, container = "1840" }: IProps) {
+export default function HeaderEight({style_2,container='1840'}: IProps) {
   const [openOffCanvas, setOpenOffcanvas] = React.useState(false);
   return (
     <>

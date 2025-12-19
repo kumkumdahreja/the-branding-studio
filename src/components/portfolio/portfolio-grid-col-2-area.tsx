@@ -5,12 +5,12 @@ import { UpArrow } from "../svg";
 import { useIsotop } from "@/hooks/use-isotop";
 
 // images
-import port_1 from "/assets/img/inner-project/portfolio-col-2/port-1.jpg";
-import port_2 from "/assets/img/inner-project/portfolio-col-2/port-2.jpg";
-import port_3 from "/assets/img/inner-project/portfolio-col-2/port-3.jpg";
-import port_4 from "/assets/img/inner-project/portfolio-col-2/port-4.jpg";
-import port_5 from "/assets/img/inner-project/portfolio-col-2/port-5.jpg";
-import port_6 from "/assets/img/inner-project/portfolio-col-2/port-6.jpg";
+import port_1 from "@/assets/img/inner-project/portfolio-col-2/port-1.jpg";
+import port_2 from "@/assets/img/inner-project/portfolio-col-2/port-2.jpg";
+import port_3 from "@/assets/img/inner-project/portfolio-col-2/port-3.jpg";
+import port_4 from "@/assets/img/inner-project/portfolio-col-2/port-4.jpg";
+import port_5 from "@/assets/img/inner-project/portfolio-col-2/port-5.jpg";
+import port_6 from "@/assets/img/inner-project/portfolio-col-2/port-6.jpg";
 
 // data
 const portfolio_data = [
@@ -100,10 +100,7 @@ export default function PortfolioGridColTwoArea() {
               key={item.id}
               className={`col-xl-6 col-lg-6 col-md-6 grid-item ${item.show}`}
             >
-              <div
-                className="tp-project-5-2-thumb anim-zoomin-wrap mb-30 not-hide-cursor p-relative"
-                data-cursor="View<br>Demo"
-              >
+              <div className="tp-project-5-2-thumb anim-zoomin-wrap mb-30 not-hide-cursor p-relative" data-cursor="View<br>Demo">
                 <Link href="/portfolio-details-1" className="cursor-hide">
                   <Image
                     className="anim-zoomin"

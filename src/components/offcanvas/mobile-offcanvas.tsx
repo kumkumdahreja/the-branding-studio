@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Facebook, CloseTwo, Linkdin, InstagramTwo, Youtube } from "../svg";
 
 // images
-import logo from "/assets/img/logo/logo.png";
-import gallery_1 from "/assets/img/menu/offcanvas/offcanvas-1.jpg";
-import gallery_2 from "/assets/img/menu/offcanvas/offcanvas-2.jpg";
-import gallery_3 from "/assets/img/menu/offcanvas/offcanvas-3.jpg";
-import gallery_4 from "/assets/img/menu/offcanvas/offcanvas-4.jpg";
+import logo from "@/assets/img/logo/logo.png";
+import gallery_1 from "@/assets/img/menu/offcanvas/offcanvas-1.jpg";
+import gallery_2 from "@/assets/img/menu/offcanvas/offcanvas-2.jpg";
+import gallery_3 from "@/assets/img/menu/offcanvas/offcanvas-3.jpg";
+import gallery_4 from "@/assets/img/menu/offcanvas/offcanvas-4.jpg";
 import MobileMenus from "./mobile-menus";
 import Link from "next/link";
 

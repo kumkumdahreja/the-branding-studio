@@ -2,16 +2,16 @@ import React from "react";
 import Image from "next/image";
 
 // images
-import shape_1 from "/assets/img/home-01/team/team-details-shape-1.png";
-import shape_2 from "/assets/img/home-01/team/team-details-shape-2.png";
-import t_details from "/assets/img/home-01/team/team-details-1.png";
+import shape_1 from "@/assets/img/home-01/team/team-details-shape-1.png";
+import shape_2 from "@/assets/img/home-01/team/team-details-shape-2.png";
+import t_details from "@/assets/img/home-01/team/team-details-1.png";
 import { IdProps } from "@/types/custom-d-t";
 import team_data from "@/data/team-data";
 import Link from "next/link";
 
 export default function TeamDetailsArea({ id }: IdProps) {
-  // Find the team that matches the given ID
-  const item = team_data.find((team) => team.id == id);
+// Find the team that matches the given ID
+    const item = team_data.find((team) => team.id == id);
 
   return (
     <div className="tm-details-wrapper p-relative">
@@ -63,11 +63,7 @@ export default function TeamDetailsArea({ id }: IdProps) {
           </div>
           <div className="col-xl-6 col-lg-6 col-md-5">
             <div className="tm-details-thumb">
-              <Image
-                src={t_details}
-                alt="team-details-img"
-                style={{ height: "auto" }}
-              />
+              <Image src={t_details} alt="team-details-img" style={{height:"auto"}} />
             </div>
           </div>
         </div>

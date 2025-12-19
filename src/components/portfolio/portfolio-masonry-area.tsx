@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useIsotop } from "@/hooks/use-isotop";
 
 // images
-import p_m_1 from "/assets/img/inner-project/masonary/masonary-1.jpg";
-import p_m_2 from "/assets/img/inner-project/masonary/masonary-2.jpg";
-import p_m_3 from "/assets/img/inner-project/masonary/masonary-3.jpg";
-import p_m_4 from "/assets/img/inner-project/masonary/masonary-4.jpg";
-import p_m_5 from "/assets/img/inner-project/masonary/masonary-5.jpg";
-import p_m_6 from "/assets/img/inner-project/masonary/masonary-6.jpg";
+import p_m_1 from "@/assets/img/inner-project/masonary/masonary-1.jpg";
+import p_m_2 from "@/assets/img/inner-project/masonary/masonary-2.jpg";
+import p_m_3 from "@/assets/img/inner-project/masonary/masonary-3.jpg";
+import p_m_4 from "@/assets/img/inner-project/masonary/masonary-4.jpg";
+import p_m_5 from "@/assets/img/inner-project/masonary/masonary-5.jpg";
+import p_m_6 from "@/assets/img/inner-project/masonary/masonary-6.jpg";
 import { UpArrow } from "../svg";
 
 // data
@@ -57,7 +57,7 @@ export default function PortfolioMasonryArea() {
   useEffect(() => {
     initIsotop();
   }, [initIsotop]);
-
+  
   return (
     <div className="pm-project-masonary-area">
       <div className="container container-1800">
@@ -80,9 +80,7 @@ export default function PortfolioMasonryArea() {
                     {item.subtitle}
                   </span>
                   <h4 className="pm-project-masonary-title">
-                    <Link href="/portfolio-details-comparison">
-                      {item.title}
-                    </Link>
+                    <Link href="/portfolio-details-comparison">{item.title}</Link>
                   </h4>
                 </div>
               </div>

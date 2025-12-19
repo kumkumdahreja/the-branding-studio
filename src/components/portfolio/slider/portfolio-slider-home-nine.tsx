@@ -2,13 +2,13 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // images
-import port_1 from "/assets/img/home-10/porfolio/port-1.jpg";
-import port_2 from "/assets/img/home-10/porfolio/port-2.jpg";
-import port_3 from "/assets/img/home-10/porfolio/port-3.jpg";
-import port_4 from "/assets/img/home-10/porfolio/port-4.jpg";
-import port_5 from "/assets/img/home-10/porfolio/port-5.jpg";
-import port_6 from "/assets/img/home-10/porfolio/port-6.jpg";
-import port_7 from "/assets/img/home-10/porfolio/port-7.jpg";
+import port_1 from "@/assets/img/home-10/porfolio/port-1.jpg";
+import port_2 from "@/assets/img/home-10/porfolio/port-2.jpg";
+import port_3 from "@/assets/img/home-10/porfolio/port-3.jpg";
+import port_4 from "@/assets/img/home-10/porfolio/port-4.jpg";
+import port_5 from "@/assets/img/home-10/porfolio/port-5.jpg";
+import port_6 from "@/assets/img/home-10/porfolio/port-6.jpg";
+import port_7 from "@/assets/img/home-10/porfolio/port-7.jpg";
 
 // portfolio titles
 const portfolio_titles = [
@@ -71,15 +71,13 @@ type IProps = {
   setWhiteCls: React.Dispatch<React.SetStateAction<boolean>>;
 };
 export default function PortfolioSliderHomeNine({ setWhiteCls }: IProps) {
-  const [activeBg, setActiveBg] = React.useState<string | null>(
-    "tp-porfolio-10-bg-4"
-  );
+  const [activeBg, setActiveBg] = React.useState<string | null>('tp-porfolio-10-bg-4');
   function handleActiveBg(id: number) {
     setActiveBg(`tp-porfolio-10-bg-${id}`);
     setWhiteCls(true);
   }
   function handleDeactiveBg() {
-    setActiveBg("tp-porfolio-10-bg-4");
+    setActiveBg('tp-porfolio-10-bg-4');
     setWhiteCls(true);
   }
   return (

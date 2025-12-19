@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // images
-import shape from "/assets/img/home-08/hero/shape-1.png";
-import port_1 from "/assets/img/home-12/portfolio/port-1.jpg";
-import port_2 from "/assets/img/home-12/portfolio/port-2.jpg";
-import port_3 from "/assets/img/home-12/portfolio/port-3.jpg";
-import port_4 from "/assets/img/home-12/portfolio/port-4.jpg";
-import port_5 from "/assets/img/home-12/portfolio/port-5.jpg";
-import port_6 from "/assets/img/home-12/portfolio/port-6.jpg";
+import shape from '@/assets/img/home-08/hero/shape-1.png';
+import port_1 from "@/assets/img/home-12/portfolio/port-1.jpg";
+import port_2 from "@/assets/img/home-12/portfolio/port-2.jpg";
+import port_3 from "@/assets/img/home-12/portfolio/port-3.jpg";
+import port_4 from "@/assets/img/home-12/portfolio/port-4.jpg";
+import port_5 from "@/assets/img/home-12/portfolio/port-5.jpg";
+import port_6 from "@/assets/img/home-12/portfolio/port-6.jpg";
 
 const portfolio_data = [
   {
@@ -48,7 +48,7 @@ export default function StudioPanelThree() {
     <div className="panel-2 tp-studio-height">
       <div className="tp-studio-portfolio-area d-flex align-items-end tp-studio-height tp-studio-plr p-relative fix pt-100 pb-60">
         <div className="tp-studio-portfolio-shape d-none d-md-block">
-          <Image src={shape} alt="shape" style={{ height: "auto" }} />
+          <Image src={shape} alt="shape" style={{height:"auto"}} />
         </div>
         <div className="container container-1630">
           <div className="row align-items-end counter-row">
@@ -79,14 +79,15 @@ export default function StudioPanelThree() {
                     >
                       <div className="tp-studio-portfolio-inner-title-box">
                         <h4 className="tp-studio-portfolio-inner-title">
-                          <Link href="/portfolio-custom-light">
-                            {item.title}
-                          </Link>
+                          <Link href="/portfolio-custom-light">{item.title}</Link>
                           <span>{item.id < 9 ? `0${item.id}` : item.id}</span>
                         </h4>
                       </div>
                       <div className="tp-studio-portfolio-img">
-                        <Image src={item.img} alt="portfolio-img" />
+                        <Image
+                          src={item.img}
+                          alt="portfolio-img"
+                        />
                       </div>
                     </div>
                   ))}

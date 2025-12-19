@@ -3,17 +3,18 @@ import Image from "next/image";
 import DetailsRightWrap from "./details-right-wrap";
 
 // images
-import s_d_1 from "/assets/img/inner-shop/shop-details/shop-details-1.jpg";
-import s_d_2 from "/assets/img/inner-shop/shop-details/shop-details-2.jpg";
-import s_d_3 from "/assets/img/inner-shop/shop-details/shop-details-3.jpg";
-import s_d_4 from "/assets/img/inner-shop/shop-details/shop-details-4.jpg";
-import s_d_5 from "/assets/img/inner-shop/shop-details/shop-details-5.jpg";
-import s_d_6 from "/assets/img/inner-shop/shop-details/shop-details-6.jpg";
+import s_d_1 from "@/assets/img/inner-shop/shop-details/shop-details-1.jpg";
+import s_d_2 from "@/assets/img/inner-shop/shop-details/shop-details-2.jpg";
+import s_d_3 from "@/assets/img/inner-shop/shop-details/shop-details-3.jpg";
+import s_d_4 from "@/assets/img/inner-shop/shop-details/shop-details-4.jpg";
+import s_d_5 from "@/assets/img/inner-shop/shop-details/shop-details-5.jpg";
+import s_d_6 from "@/assets/img/inner-shop/shop-details/shop-details-6.jpg";
 import { IdProps } from "@/types/custom-d-t";
 
 const shop_details_images = [s_d_1, s_d_2, s_d_3, s_d_4, s_d_5, s_d_6];
 
 export default function ShopDetailsArea({ id }: IdProps) {
+
   return (
     <div className="tp-shop-details-area tp-shop-details-scroll-height pt-100">
       <div className="container-fluid p-0">
@@ -36,7 +37,7 @@ export default function ShopDetailsArea({ id }: IdProps) {
             </div>
           </div>
           <div className="col-xxl-4 col-xl-5">
-            <DetailsRightWrap id={id} />
+            <DetailsRightWrap id={id}/>
           </div>
         </div>
       </div>

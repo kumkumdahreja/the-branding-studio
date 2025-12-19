@@ -4,13 +4,13 @@ import React from "react";
 import Image from "next/image";
 import { Leaf } from "../svg";
 // instagram images
-import inst_1 from "/assets/img/home-02/instagram/insta-inner-1.jpg";
-import inst_2 from "/assets/img/home-02/instagram/insta-inner-2.jpg";
-import inst_3 from "/assets/img/home-02/instagram/insta-inner-3.jpg";
-import inst_4 from "/assets/img/home-02/instagram/insta-inner-4.jpg";
-import inst_5 from "/assets/img/home-02/instagram/insta-inner-5.jpg";
-import inst_6 from "/assets/img/home-02/instagram/insta-inner-6.jpg";
-import inst_7 from "/assets/img/home-02/instagram/insta-inner-7.jpg";
+import inst_1 from "@/assets/img/home-02/instagram/insta-inner-1.jpg";
+import inst_2 from "@/assets/img/home-02/instagram/insta-inner-2.jpg";
+import inst_3 from "@/assets/img/home-02/instagram/insta-inner-3.jpg";
+import inst_4 from "@/assets/img/home-02/instagram/insta-inner-4.jpg";
+import inst_5 from "@/assets/img/home-02/instagram/insta-inner-5.jpg";
+import inst_6 from "@/assets/img/home-02/instagram/insta-inner-6.jpg";
+import inst_7 from "@/assets/img/home-02/instagram/insta-inner-7.jpg";
 import Link from "next/link";
 
 export default function InstagramArea() {
@@ -42,7 +42,7 @@ export default function InstagramArea() {
           </Link>
         </div>
         <div className="tp-instagram-thumb">
-          <img src="/assets/img/home-02/instagram/insta-1.jpg" alt="inst-img" />
+          <img src="/assets/img/home-02/instagram/insta-1.jpg" alt="inst-img"/>
         </div>
         <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">

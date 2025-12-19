@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick.css";
 import { DownArrow } from "../../svg";
 
 // images
-import port_sm_1 from "/assets/img/home-11/port-sm-1.jpg";
-import port_sm_2 from "/assets/img/home-11/port-sm-2.jpg";
-import port_sm_3 from "/assets/img/home-11/port-sm-3.jpg";
-import port_sm_4 from "/assets/img/home-11/port-sm-4.jpg";
-import port_sm_5 from "/assets/img/home-11/port-sm-5.jpg";
+import port_sm_1 from "@/assets/img/home-11/port-sm-1.jpg";
+import port_sm_2 from "@/assets/img/home-11/port-sm-2.jpg";
+import port_sm_3 from "@/assets/img/home-11/port-sm-3.jpg";
+import port_sm_4 from "@/assets/img/home-11/port-sm-4.jpg";
+import port_sm_5 from "@/assets/img/home-11/port-sm-5.jpg";
 import { SlickNextArrow, SlickPrevArrow } from "../../slick-arrow";
 
 // slider data
@@ -106,7 +106,7 @@ const slider_setting_two = {
   slidesToShow: 4,
   slidesToScroll: 1,
   dots: false,
-  arrows: true,
+  arrows: true, 
   focusOnSelect: true,
   centerPadding: "0",
   speed: 600,
@@ -240,9 +240,7 @@ export default function PortfolioSliderHomeTen() {
                         {item.subtitle}
                       </span>
                       <h4 className="tp-portfolio-11-slider-nav-tittle">
-                        <Link href="/portfolio-details-video">
-                          {item.title}
-                        </Link>
+                        <Link href="/portfolio-details-video">{item.title}</Link>
                       </h4>
                     </div>
                   </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 // images
-import s_icon_1 from "/assets/img/home-08/service/sv-icon-1.png";
-import s_icon_2 from "/assets/img/home-08/service/sv-icon-2.png";
-import s_icon_3 from "/assets/img/home-08/service/sv-icon-3.png";
+import s_icon_1 from "@/assets/img/home-08/service/sv-icon-1.png";
+import s_icon_2 from "@/assets/img/home-08/service/sv-icon-2.png";
+import s_icon_3 from "@/assets/img/home-08/service/sv-icon-3.png";
 import Link from "next/link";
 
 // service data

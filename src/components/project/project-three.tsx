@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // images
-import port_1 from "/assets/img/home-04/portfolio/port-1.jpg";
-import port_2 from "/assets/img/home-04/portfolio/port-2.jpg";
-import port_3 from "/assets/img/home-04/portfolio/port-3.jpg";
-import port_4 from "/assets/img/home-04/portfolio/port-4.jpg";
+import port_1 from "@/assets/img/home-04/portfolio/port-1.jpg";
+import port_2 from "@/assets/img/home-04/portfolio/port-2.jpg";
+import port_3 from "@/assets/img/home-04/portfolio/port-3.jpg";
+import port_4 from "@/assets/img/home-04/portfolio/port-4.jpg";
 
 // portfolio data
 const portfolio_data = [
@@ -44,11 +44,7 @@ export default function ProjectThree() {
               <div key={item.id} className="tp-project-4-bg project-panel">
                 <Link href="/portfolio-details-1">
                   <div className="tp-project-4-thumb">
-                    <Image
-                      src={item.img}
-                      alt="port-thumb"
-                      style={{ height: "auto" }}
-                    />
+                    <Image src={item.img} alt="port-thumb" style={{ height: "auto" }} /> 
                   </div>
                   <div className="tp-project-4-content z-index">
                     <h4 className="tp-project-4-title tp_reveal_anim-2">

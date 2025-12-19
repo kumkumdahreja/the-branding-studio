@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Share } from "../../svg";
 import Link from "next/link";
 // images
-import port_1 from "/assets/img/home-09/slider/slider-1.jpg";
-import port_2 from "/assets/img/home-09/slider/slider-2.jpg";
-import port_3 from "/assets/img/home-09/slider/slider-3.jpg";
-import port_4 from "/assets/img/home-09/slider/slider-4.jpg";
-import port_5 from "/assets/img/home-09/slider/slider-5.jpg";
+import port_1 from "@/assets/img/home-09/slider/slider-1.jpg";
+import port_2 from "@/assets/img/home-09/slider/slider-2.jpg";
+import port_3 from "@/assets/img/home-09/slider/slider-3.jpg";
+import port_4 from "@/assets/img/home-09/slider/slider-4.jpg";
+import port_5 from "@/assets/img/home-09/slider/slider-5.jpg";
 
 const portfolio_data = [
   {
@@ -92,15 +92,14 @@ export default function PerspectivePortfolioSlider() {
             <div className="col-xl-6 col-lg-6 col-md-6 col-6">
               <div className="tp-portfolio-9-social-info">
                 <span>
-                  Follow Us <Share />
+                  Follow Us{" "}
+                  <Share />
                 </span>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-6">
               <div className="tp-portfolio-9-scroll text-end">
-                <Link onClick={scrollTop} href="#">
-                  (Scroll)
-                </Link>
+                <Link onClick={scrollTop} href="#">(Scroll)</Link>
               </div>
             </div>
           </div>

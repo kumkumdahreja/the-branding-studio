@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from "react";
 import Image from "next/image";
 import { SwiperOptions } from "swiper/types";
@@ -7,8 +7,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 import CounterTwo from "../counter/counter-two";
 import { NextArrow, PrevArrow } from "../svg";
-import shape from "/assets/img/home-08/testimonial/test-1.png";
-import logo from "/assets/img/home-08/testimonial/test-logo-1.png";
+import shape from "@/assets/img/home-08/testimonial/test-1.png";
+import logo from "@/assets/img/home-08/testimonial/test-logo-1.png";
 
 // slider setting
 const slider_setting: SwiperOptions = {
@@ -48,15 +48,11 @@ const testimonial_data = [
 // prop type
 type IProps = {
   style_2?: boolean;
-};
-export default function StudioPanelFour({ style_2 = false }: IProps) {
+}
+export default function StudioPanelFour({style_2=false}: IProps) {
   return (
-    <div className={`${style_2 ? "" : "panel-2 tp-studio-height"}`}>
-      <div
-        className={`tp-studio-testimonial-area tp-studio-plr black-bg p-relative fix tp-studio-testimonial-xs-space ${
-          style_2 ? "tm-testimonial-height" : "tp-studio-height"
-        }`}
-      >
+    <div className={`${style_2?'':'panel-2 tp-studio-height'}`}>
+      <div className={`tp-studio-testimonial-area tp-studio-plr black-bg p-relative fix tp-studio-testimonial-xs-space ${style_2?'tm-testimonial-height':'tp-studio-height'}`}>
         <div className="tp-studio-testimonial-title-box d-none d-md-block">
           <h4 className="tp-studio-testimonial-title">What Our Clients Say</h4>
         </div>
@@ -70,7 +66,7 @@ export default function StudioPanelFour({ style_2 = false }: IProps) {
             <div className="row align-items-start">
               <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                 <div className="tp-studio-testimonial-shape">
-                  <Image src={shape} alt="shape" style={{ height: "auto" }} />
+                  <Image src={shape} alt="shape" style={{height:"auto"}} />
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2 col-md-3">

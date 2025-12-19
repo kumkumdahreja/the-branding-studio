@@ -1,25 +1,22 @@
-"use client";
+'use client';
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // import { Cart } from "@/components/svg";
 import HeaderMenus from "./header-menus";
-import logo from "/assets/img/logo/logo.png";
-import logo_2 from "/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/logo.png";
+import logo_2 from "@/assets/img/logo/logo-white.png";
 // import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
 import useStickyHeader from "@/hooks/use-sticky-header";
 
-// prop type
+// prop type 
 type IProps = {
   transparent?: boolean;
   cls?: string;
-};
-export default function HeaderEleven({
-  transparent = false,
-  cls = "",
-}: IProps) {
-  const { isSticky, headerFullWidth } = useStickyHeader(20);
+}
+export default function HeaderEleven({transparent=false,cls=''}: IProps) {
+  const {isSticky, headerFullWidth} = useStickyHeader(20);
   // const [openCartMini, setOpenCartMini] = React.useState(false);
   const [openOffCanvas, setOpenOffCanvas] = React.useState(false);
 

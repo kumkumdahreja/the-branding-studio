@@ -5,12 +5,12 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 // project images
-import p_1 from "/assets/img/home-01/project/project-1-1.jpg";
-import p_2 from "/assets/img/home-01/project/project-1-2.jpg";
-import p_3 from "/assets/img/home-01/project/project-1-3.jpg";
-import p_4 from "/assets/img/home-01/project/project-1-4.jpg";
-import p_5 from "/assets/img/home-01/project/project-1-5.jpg";
-import p_6 from "/assets/img/home-01/project/project-1-6.jpg";
+import p_1 from "@/assets/img/home-01/project/project-1-1.jpg";
+import p_2 from "@/assets/img/home-01/project/project-1-2.jpg";
+import p_3 from "@/assets/img/home-01/project/project-1-3.jpg";
+import p_4 from "@/assets/img/home-01/project/project-1-4.jpg";
+import p_5 from "@/assets/img/home-01/project/project-1-5.jpg";
+import p_6 from "@/assets/img/home-01/project/project-1-6.jpg";
 
 // type
 type IProject = {
@@ -67,12 +67,7 @@ function ProjectItem({ item }: { item: IProject }) {
         data-cursor="View<br>Demo"
       >
         <Link className="cursor-hide" href="/portfolio-details-3">
-          <Image
-            data-speed=".8"
-            src={item.img}
-            alt="project-img"
-            style={{ height: "auto" }}
-          />
+          <Image data-speed=".8" src={item.img} alt="project-img" style={{ height: "auto" }} />
         </Link>
       </div>
     </div>
@@ -83,12 +78,10 @@ function ProjectItem({ item }: { item: IProject }) {
 type IProps = {
   style_2?: boolean;
 };
-const ProjectOne = ({ style_2 = false }: IProps) => {
+const ProjectOne = ({style_2=false}:IProps) => {
   return (
     <>
-      <div
-        className={`${style_2 ? "tp-project-area-2" : "tp-project-area"} fix`}
-      >
+      <div className={`${style_2 ? "tp-project-area-2" : "tp-project-area"} fix`}>
         {!style_2 && (
           <div className="container-fluid p-0">
             <div className="row g-0">

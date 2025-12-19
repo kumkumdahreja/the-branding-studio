@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 
 // brand images
-import b_1 from "/assets/img/inner-shop/shop-sidebar/brand/brand-1.png";
-import b_2 from "/assets/img/inner-shop/shop-sidebar/brand/brand-2.png";
-import b_3 from "/assets/img/inner-shop/shop-sidebar/brand/brand-3.png";
-import b_4 from "/assets/img/inner-shop/shop-sidebar/brand/brand-4.png";
-import b_5 from "/assets/img/inner-shop/shop-sidebar/brand/brand-5.png";
-import b_6 from "/assets/img/inner-shop/shop-sidebar/brand/brand-6.png";
-import b_7 from "/assets/img/inner-shop/shop-sidebar/brand/brand-7.png";
-import b_8 from "/assets/img/inner-shop/shop-sidebar/brand/brand-8.png";
+import b_1 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-1.png";
+import b_2 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-2.png";
+import b_3 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-3.png";
+import b_4 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-4.png";
+import b_5 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-5.png";
+import b_6 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-6.png";
+import b_7 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-7.png";
+import b_8 from "@/assets/img/inner-shop/shop-sidebar/brand/brand-8.png";
 import Link from "next/link";
 
 // brand images

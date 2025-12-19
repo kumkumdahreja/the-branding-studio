@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { UpArrow } from "../svg";
-import p_img_1 from "/assets/img/home-05/project/project-2.jpg";
-import p_img_2 from "/assets/img/home-05/project/project-3.jpg";
+import p_img_1 from "@/assets/img/home-05/project/project-2.jpg";
+import p_img_2 from "@/assets/img/home-05/project/project-3.jpg";
 
 export default function HeroBannerFive() {
   return (
@@ -22,7 +22,7 @@ export default function HeroBannerFive() {
             <Link className="tp-btn-black-square" href="/portfolio-grid-col-2">
               View Our Works
               <span>
-                <UpArrow />
+                <UpArrow/>
               </span>
             </Link>
           </div>
@@ -33,11 +33,7 @@ export default function HeroBannerFive() {
             <div className="tp-project-5-thumb-wrap d-flex align-items-center">
               <div className="tp-project-5-thumb">
                 <Link href="/portfolio-details-1">
-                  <Image
-                    src={p_img_1}
-                    alt="project-img"
-                    style={{ height: "auto" }}
-                  />
+                  <Image src={p_img_1} alt="project-img" style={{height: "auto"}} />
                 </Link>
               </div>
               <div className="tp-project-5-thumb">
@@ -58,11 +54,7 @@ export default function HeroBannerFive() {
               </div>
               <div className="tp-project-5-thumb">
                 <Link href="/portfolio-details-1">
-                  <Image
-                    src={p_img_2}
-                    alt="project-img"
-                    style={{ height: "auto" }}
-                  />
+                  <Image src={p_img_2} alt="project-img" style={{height: "auto"}} />
                 </Link>
               </div>
             </div>

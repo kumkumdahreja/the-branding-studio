@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // images
-import s_1 from "/assets/img/home-01/service/service-icon-1.png";
-import s_2 from "/assets/img/home-01/service/service-icon-2.png";
-import s_3 from "/assets/img/home-01/service/service-icon-3.png";
+import s_1 from "@/assets/img/home-01/service/service-icon-1.png";
+import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
+import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 
 const service_data = [
   {
@@ -36,11 +36,7 @@ export function ServiceItems() {
         <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
           <div className="tp-service-5-item tp_fade_bottom space-1">
             <div className="tp-service-4-icon">
-              <Image
-                style={{ width: "auto", height: "auto" }}
-                src={item.icon}
-                alt="icon"
-              />
+              <Image style={{ width: "auto", height: "auto" }} src={item.icon} alt="icon" />
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">
@@ -75,7 +71,7 @@ export default function ServiceFive() {
           </div>
         </div>
         <div className="tp-service-5-wrap">
-          <ServiceItems />
+          <ServiceItems/>
         </div>
       </div>
     </div>

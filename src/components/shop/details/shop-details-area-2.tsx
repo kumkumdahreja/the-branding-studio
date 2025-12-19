@@ -3,17 +3,17 @@ import Image from "next/image";
 import DetailsRightWrap from "./details-right-wrap";
 
 // images
-import tab_img_1 from "/assets/img/inner-shop/shop-details/tab-img/tab-1.png";
-import tab_img_2 from "/assets/img/inner-shop/shop-details/tab-img/tab-2.png";
-import tab_img_3 from "/assets/img/inner-shop/shop-details/tab-img/tab-3.png";
-import tab_img_4 from "/assets/img/inner-shop/shop-details/tab-img/tab-4.png";
-import tab_img_5 from "/assets/img/inner-shop/shop-details/tab-img/tab-5.png";
+import tab_img_1 from "@/assets/img/inner-shop/shop-details/tab-img/tab-1.png";
+import tab_img_2 from "@/assets/img/inner-shop/shop-details/tab-img/tab-2.png";
+import tab_img_3 from "@/assets/img/inner-shop/shop-details/tab-img/tab-3.png";
+import tab_img_4 from "@/assets/img/inner-shop/shop-details/tab-img/tab-4.png";
+import tab_img_5 from "@/assets/img/inner-shop/shop-details/tab-img/tab-5.png";
 // nav images
-import nav_1 from "/assets/img/inner-shop/shop-details/tab-img/nav-1.png";
-import nav_2 from "/assets/img/inner-shop/shop-details/tab-img/nav-2.png";
-import nav_3 from "/assets/img/inner-shop/shop-details/tab-img/nav-3.png";
-import nav_4 from "/assets/img/inner-shop/shop-details/tab-img/nav-4.png";
-import nav_5 from "/assets/img/inner-shop/shop-details/tab-img/nav-5.png";
+import nav_1 from "@/assets/img/inner-shop/shop-details/tab-img/nav-1.png";
+import nav_2 from "@/assets/img/inner-shop/shop-details/tab-img/nav-2.png";
+import nav_3 from "@/assets/img/inner-shop/shop-details/tab-img/nav-3.png";
+import nav_4 from "@/assets/img/inner-shop/shop-details/tab-img/nav-4.png";
+import nav_5 from "@/assets/img/inner-shop/shop-details/tab-img/nav-5.png";
 
 const tab_images = [tab_img_1, tab_img_2, tab_img_3, tab_img_4, tab_img_5];
 const nav_images = [nav_1, nav_2, nav_3, nav_4, nav_5];
@@ -72,7 +72,7 @@ export default function ShopDetailsAreaTwo() {
                         className="w-100"
                         src={imgSrc}
                         alt="nav-img"
-                        style={{ width: "auto", height: "auto" }}
+                        style={{width:"auto", height: "auto" }}
                       />
                     </button>
                   ))}
