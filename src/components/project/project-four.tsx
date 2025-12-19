@@ -4,10 +4,10 @@ import { ProjectShape, RightArrow } from "../svg";
 import Link from "next/link";
 
 // Import images (you'll need to update these with your actual images)
-import healin_img1 from "@/assets/img/home-03/portfolio/healin-1.jpg";
-import healin_img2 from "@/assets/img/home-03/portfolio/healin-2.jpg";
-import adarsh_img1 from "@/assets/img/home-03/portfolio/adarsh-1.jpg";
-import adarsh_img2 from "@/assets/img/home-03/portfolio/adarsh-2.jpg";
+import healin_img1 from "/assets/img/home-03/portfolio/healin-1.jpg";
+import healin_img2 from "/assets/img/home-03/portfolio/healin-2.jpg";
+import adarsh_img1 from "/assets/img/home-03/portfolio/adarsh-1.jpg";
+import adarsh_img2 from "/assets/img/home-03/portfolio/adarsh-2.jpg";
 
 // portfolio data
 const project_data = [

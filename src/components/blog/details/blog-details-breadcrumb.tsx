@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import overlay from "@/assets/img/inner-blog/blog-details/bg-shape/overly.png";
-import avatar from "@/assets/img/inner-blog/blog-details/avatar/avatar-2.jpg";
+import overlay from "/assets/img/inner-blog/blog-details/bg-shape/overly.png";
+import avatar from "/assets/img/inner-blog/blog-details/avatar/avatar-2.jpg";
 import { IdProps } from "@/types/custom-d-t";
 import { blog_data } from "@/data/blog-data";
 

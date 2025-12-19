@@ -2,12 +2,12 @@ import React from "react";
 import { Leaf } from "../svg";
 import Image from "next/image";
 // service icon
-import ser_1 from "@/assets/img/home-02/service/sv-icon-1.png";
-import ser_2 from "@/assets/img/home-02/service/sv-icon-2.png";
-import ser_3 from "@/assets/img/home-02/service/sv-icon-3.png";
-import ser_4 from "@/assets/img/home-02/service/sv-icon-4.png";
+import ser_1 from "/assets/img/home-02/service/sv-icon-1.png";
+import ser_2 from "/assets/img/home-02/service/sv-icon-2.png";
+import ser_3 from "/assets/img/home-02/service/sv-icon-3.png";
+import ser_4 from "/assets/img/home-02/service/sv-icon-4.png";
 // shape
-import shape from "@/assets/img/home-02/service/sv-shape-1.png";
+import shape from "/assets/img/home-02/service/sv-shape-1.png";
 
 const service_accordion = [
   {
@@ -68,7 +68,9 @@ export default function ServiceTwo() {
                   <div key={s.id} className="accordion-items">
                     <h2 className="accordion-header">
                       <button
-                        className={`accordion-buttons ${s.id !== 1 ? "collapsed" : ""}`}
+                        className={`accordion-buttons ${
+                          s.id !== 1 ? "collapsed" : ""
+                        }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse-${s.id}`}
@@ -84,7 +86,9 @@ export default function ServiceTwo() {
                     </h2>
                     <div
                       id={`collapse-${s.id}`}
-                      className={`accordion-collapse collapse ${s.id === 1 ? "show" : ""}`}
+                      className={`accordion-collapse collapse ${
+                        s.id === 1 ? "show" : ""
+                      }`}
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">

@@ -6,12 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 // internal imports
-import star_icon from "@/assets/img/home-04/service/sv-star-1.png";
-import sv_1 from "@/assets/img/home-04/service/sv-icon-1.png";
-import sv_2 from "@/assets/img/home-04/service/sv-icon-2.png";
-import sv_3 from "@/assets/img/home-04/service/sv-icon-3.png";
-import sv_4 from "@/assets/img/home-04/service/sv-icon-4.png";
-
+import star_icon from "/assets/img/home-04/service/sv-star-1.png";
+import sv_1 from "/assets/img/home-04/service/sv-icon-1.png";
+import sv_2 from "/assets/img/home-04/service/sv-icon-2.png";
+import sv_3 from "/assets/img/home-04/service/sv-icon-3.png";
+import sv_4 from "/assets/img/home-04/service/sv-icon-4.png";
 
 // slider setting
 const slider_setting: SwiperOptions = {
@@ -103,11 +102,7 @@ export default function ServiceThree() {
             </div>
             <div className="col-xl-3 col-lg-3 col-md-3">
               <div className="tp-service-4-shape-1 text-start text-md-end">
-                <Image
-                  className="tp-zoom-in-out"
-                  src={star_icon}
-                  alt="star"
-                />
+                <Image className="tp-zoom-in-out" src={star_icon} alt="star" />
               </div>
             </div>
           </div>
@@ -127,7 +122,11 @@ export default function ServiceThree() {
                 }}
               >
                 <div className="tp-service-4-icon">
-                  <Image style={{width:"auto", height:"auto"}} src={item.icon} alt="icon" />
+                  <Image
+                    style={{ width: "auto", height: "auto" }}
+                    src={item.icon}
+                    alt="icon"
+                  />
                 </div>
                 <div className="tp-service-4-content">
                   <h4 className="tp-service-4-title-sm">

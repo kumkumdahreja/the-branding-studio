@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 // images
-import location_1 from "@/assets/img/inner-contact/contact/info-1.jpg";
+import location_1 from "/assets/img/inner-contact/contact/info-1.jpg";
 
 import Link from "next/link";
 
@@ -51,7 +51,11 @@ const ContactLocation = () => {
                 <div className="col-xl-7">
                   <div className="cn-contact-left d-flex flex-wrap align-items-center">
                     <div className="cn-contact-info-thumb">
-                      <Image src={item.img} alt="image" style={{ height: "auto" }} />
+                      <Image
+                        src={item.img}
+                        alt="image"
+                        style={{ height: "auto" }}
+                      />
                     </div>
                     <div className="cn-contact-left-info">
                       <h4 className="cn-contact-left-title">{item.country}</h4>

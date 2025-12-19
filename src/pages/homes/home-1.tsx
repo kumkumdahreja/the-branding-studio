@@ -1,11 +1,16 @@
-'use client';
+"use client";
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import Link from "next/link";
-import useScrollSmooth from '@/hooks/use-scroll-smooth';
-import { ScrollSmoother, ScrollTrigger, SplitText, cursorAnimation } from '@/plugins';
+import useScrollSmooth from "@/hooks/use-scroll-smooth";
+import {
+  ScrollSmoother,
+  ScrollTrigger,
+  SplitText,
+  cursorAnimation,
+} from "@/plugins";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
@@ -22,15 +27,19 @@ import TestimonialOne from "@/components/testimonial/testimonial-one";
 import FooterOne from "@/layouts/footers/footer-one";
 
 // images
-import shape_1 from '@/assets/img/home-01/footer/footer-circle-shape-1.png';
-import shape_2 from '@/assets/img/home-01/footer/footer-circle-shape-2.png';
+import shape_1 from "/assets/img/home-01/footer/footer-circle-shape-1.png";
+import shape_2 from "/assets/img/home-01/footer/footer-circle-shape-2.png";
 
 // animation
 import { videoAnimOne } from "@/utils/video-anim";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
 import { hoverBtn } from "@/utils/hover-btn";
 import { footerTwoAnimation } from "@/utils/footer-anim";
-import { bounceAnimation, charAnimation, fadeAnimation } from "@/utils/title-animation";
+import {
+  bounceAnimation,
+  charAnimation,
+  fadeAnimation,
+} from "@/utils/title-animation";
 
 const HomeMain = () => {
   useScrollSmooth();
@@ -38,14 +47,17 @@ const HomeMain = () => {
     document.body.classList.add("tp-magic-cursor");
     return () => {
       document.body.classList.remove("tp-magic-cursor");
-    }
+    };
   }, []);
 
   useEffect(() => {
-    if(typeof window !== 'undefined' && document.querySelector('.tp-magic-cursor')) {
+    if (
+      typeof window !== "undefined" &&
+      document.querySelector(".tp-magic-cursor")
+    ) {
       cursorAnimation();
     }
-  },[]);
+  }, []);
 
   useGSAP(() => {
     const timer = setTimeout(() => {
@@ -53,12 +65,12 @@ const HomeMain = () => {
       // portfolio image wrap
       gsap.timeline({
         scrollTrigger: {
-           trigger: ".tp-project-full-img-wrap",
-           start: "top 65",
-           end: "bottom 0%",
-           pin: ".tp-project-full-img",
-           pinSpacing: false,
-        }
+          trigger: ".tp-project-full-img-wrap",
+          start: "top 65",
+          end: "bottom 0%",
+          pin: ".tp-project-full-img",
+          pinSpacing: false,
+        },
       });
       // team marquee
       teamMarqueAnim();
@@ -67,20 +79,17 @@ const HomeMain = () => {
       fadeAnimation();
       charAnimation();
       bounceAnimation();
-    }, 100)
+    }, 100);
     return () => clearTimeout(timer);
   });
 
-
   return (
     <Wrapper showBackToTop={false}>
-
       {/* magic cursor start */}
       <div id="magic-cursor">
         <div id="ball"></div>
       </div>
       {/* magic cursor end */}
-
 
       {/* header area start */}
       <HeaderOne />
@@ -89,7 +98,6 @@ const HomeMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            
             {/* hero area start */}
             <HeroBannerOne />
             {/* hero area end */}
@@ -97,8 +105,6 @@ const HomeMain = () => {
             {/* video area */}
             <VideOne />
             {/* video area */}
-
-            
 
             {/* service area */}
             <ServiceOne />
@@ -130,13 +136,13 @@ const HomeMain = () => {
       {/* footer shape */}
       <div className="tp-footer-shape-wrap z-index-5 smooth">
         <Link href="/contact">
-            <div className="tp-footer-shape p-relative">
-                <Image className="img-1" src={shape_1} alt="shape"/>
-                <Image className="img-2" src={shape_2} alt="shape"/>
-                <span></span>
-            </div>
-          </Link>
-        </div>
+          <div className="tp-footer-shape p-relative">
+            <Image className="img-1" src={shape_1} alt="shape" />
+            <Image className="img-2" src={shape_2} alt="shape" />
+            <span></span>
+          </div>
+        </Link>
+      </div>
       {/* footer shape */}
     </Wrapper>
   );

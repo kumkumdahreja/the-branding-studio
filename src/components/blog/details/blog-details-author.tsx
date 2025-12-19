@@ -1,17 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import avatar from '@/assets/img/inner-blog/blog-details/avatar/avatar-1.jpg'
+import avatar from "/assets/img/inner-blog/blog-details/avatar/avatar-1.jpg";
 import Link from "next/link";
 
 export default function BlogDetailsAuthor() {
   return (
     <div className="blog-details-author d-flex mb-60">
       <div className="blog-details-author-img">
-        <Image
-          style={{ width: "100%", height: "auto" }}
-          src={avatar}
-          alt=""
-        />
+        <Image style={{ width: "100%", height: "auto" }} src={avatar} alt="" />
       </div>
       <div className="blog-details-author-content-wrap">
         <div className="blog-details-author-social text-end">

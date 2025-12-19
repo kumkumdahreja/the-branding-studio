@@ -6,22 +6,22 @@ import { SwiperOptions } from "swiper/types";
 import { Autoplay } from "swiper/modules";
 
 // Import all brand logos
-import amyra_logo from "@/assets/img/home-01/brand/amyra-logo.png";
-import aws_logo from "@/assets/img/home-01/brand/aws-logo.png";
-import dermabay_logo from "@/assets/img/home-01/brand/dermabay-logo.png";
-import flavocia_logo from "@/assets/img/home-01/brand/flavocia-logo.png";
-import heal_hub_logo from "@/assets/img/home-01/brand/heal-hub-logo.png";
-import healin_logo from "@/assets/img/home-01/brand/healin-logo.png";
-import hotel_kuber_logo from "@/assets/img/home-01/brand/hotel-kuber-logo.png";
-import kulcha_kulture_logo from "@/assets/img/home-01/brand/kulcha-kulture-logo.png";
-import kundan_essentials_logo from "@/assets/img/home-01/brand/kundan-essentials-logo.png";
-import kwisaa_logo from "@/assets/img/home-01/brand/kwisaa-logo.png";
-import nutriherbs_logo from "@/assets/img/home-01/brand/nutriherbs-logo.png";
-import odhni_logo from "@/assets/img/home-01/brand/odhni-logo.png";
-import parsas_logo from "@/assets/img/home-01/brand/parsas-logo.png";
-import shree_balaji_motors_logo from "@/assets/img/home-01/brand/shree-balaji-motors-logo.png";
-import silvora_logo from "@/assets/img/home-01/brand/silvora-logo.png";
-import vastra_chowk_logo from "@/assets/img/home-01/brand/vastrachowk-logo.png";
+import amyra_logo from "/assets/img/home-01/brand/amyra-logo.png";
+import aws_logo from "/assets/img/home-01/brand/aws-logo.png";
+import dermabay_logo from "/assets/img/home-01/brand/dermabay-logo.png";
+import flavocia_logo from "/assets/img/home-01/brand/flavocia-logo.png";
+import heal_hub_logo from "/assets/img/home-01/brand/heal-hub-logo.png";
+import healin_logo from "/assets/img/home-01/brand/healin-logo.png";
+import hotel_kuber_logo from "/assets/img/home-01/brand/hotel-kuber-logo.png";
+import kulcha_kulture_logo from "/assets/img/home-01/brand/kulcha-kulture-logo.png";
+import kundan_essentials_logo from "/assets/img/home-01/brand/kundan-essentials-logo.png";
+import kwisaa_logo from "/assets/img/home-01/brand/kwisaa-logo.png";
+import nutriherbs_logo from "/assets/img/home-01/brand/nutriherbs-logo.png";
+import odhni_logo from "/assets/img/home-01/brand/odhni-logo.png";
+import parsas_logo from "/assets/img/home-01/brand/parsas-logo.png";
+import shree_balaji_motors_logo from "/assets/img/home-01/brand/shree-balaji-motors-logo.png";
+import silvora_logo from "/assets/img/home-01/brand/silvora-logo.png";
+import vastra_chowk_logo from "/assets/img/home-01/brand/vastrachowk-logo.png";
 
 // Brand data with all 16 brands
 const brand_data = [

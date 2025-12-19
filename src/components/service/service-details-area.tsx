@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 // images
-import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
-import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
-import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
+import sv_1 from "/assets/img/inner-service/sercive-details/sv-details-1.jpg";
+import sv_2 from "/assets/img/inner-service/sercive-details/sv-details-2.jpg";
+import sv_3 from "/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
 export default function ServiceDetailsArea() {
   return (
@@ -137,10 +137,7 @@ export default function ServiceDetailsArea() {
                   design, tailor-made and in line with your activity will allow
                   you to differentiate yourself and mark your audience.
                 </p>
-                <Link
-                  className="tp-btn-white background-black"
-                  href="/contact"
-                >
+                <Link className="tp-btn-white background-black" href="/contact">
                   Let’s Talk
                 </Link>
               </div>

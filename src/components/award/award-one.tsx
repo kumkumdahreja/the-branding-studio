@@ -3,12 +3,12 @@ import React from "react";
 import Image from "next/image";
 
 // award images
-import a_1 from "@/assets/img/home-01/award/award-1.png";
-import a_2 from "@/assets/img/home-01/award/award-2.png";
-import a_3 from "@/assets/img/home-01/award/award-3.png";
-import a_4 from "@/assets/img/home-01/award/award-4.png";
-import a_5 from "@/assets/img/home-01/award/award-5.png";
-import a_6 from "@/assets/img/home-01/award/award-6.png";
+import a_1 from "/assets/img/home-01/award/award-1.png";
+import a_2 from "/assets/img/home-01/award/award-2.png";
+import a_3 from "/assets/img/home-01/award/award-3.png";
+import a_4 from "/assets/img/home-01/award/award-4.png";
+import a_5 from "/assets/img/home-01/award/award-5.png";
+import a_6 from "/assets/img/home-01/award/award-6.png";
 import { Leaf } from "../svg";
 
 const award_data = [
@@ -61,7 +61,7 @@ type IProps = {
   cls?: string;
   abStyle?: boolean;
 };
-const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
+const AwardOne = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   const [activeThumb, setActiveThumb] = React.useState(1);
   return (
     <div className={`tp-award-area ${cls}`}>

@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Reply } from "@/components/svg";
-import avatar_1 from "@/assets/img/inner-blog/blog-details/avatar/avatar-3.jpg";
-import avatar_2 from "@/assets/img/inner-blog/blog-details/avatar/avatar-4.jpg";
+import avatar_1 from "/assets/img/inner-blog/blog-details/avatar/avatar-3.jpg";
+import avatar_2 from "/assets/img/inner-blog/blog-details/avatar/avatar-4.jpg";
 import Link from "next/link";
 
 // comment data
@@ -52,9 +52,7 @@ export default function BlogDetailsComments() {
               </div>
               <p>{item.comment}</p>
               <div className="postbox__comment-reply">
-                <Link href="#">
-                  Reply
-                </Link>
+                <Link href="#">Reply</Link>
               </div>
             </div>
           </div>

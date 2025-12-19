@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Leaf } from "../svg";
-import hero_bg from "@/assets/img/home-02/hero/hero-bg-1.jpg";
+import hero_bg from "/assets/img/home-02/hero/hero-bg-1.jpg";
 
 const HeroBannerTwo = () => {
   return (
@@ -14,7 +14,11 @@ const HeroBannerTwo = () => {
             <div className="tp-hero-2-wrapper-main">
               <div className="tp-hero-2-wrapper d-flex align-items-center p-relative">
                 <div className="tp-hero-2-bg tp-gsap-bg tp-hero-bg-single">
-                  <Image style={{ width: "100%", height: "auto" }} src={hero_bg} alt="hero-bg" />
+                  <Image
+                    style={{ width: "100%", height: "auto" }}
+                    src={hero_bg}
+                    alt="hero-bg"
+                  />
                 </div>
                 <div className="tp-hero-2-content-wrap p-relative">
                   <div className="tp-hero-2-title-box">

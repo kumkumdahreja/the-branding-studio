@@ -13,10 +13,10 @@ import {
 } from "@/utils/webgl-anim";
 import { WebGL } from "@/plugins";
 // images
-import showcase_1 from "@/assets/img/inner-project/showcase/showcase-1.jpg";
-import showcase_2 from "@/assets/img/inner-project/showcase/showcase-2.jpg";
-import showcase_3 from "@/assets/img/inner-project/showcase/showcase-3.jpg";
-import showcase_4 from "@/assets/img/inner-project/showcase/showcase-4.jpg";
+import showcase_1 from "/assets/img/inner-project/showcase/showcase-1.jpg";
+import showcase_2 from "/assets/img/inner-project/showcase/showcase-2.jpg";
+import showcase_3 from "/assets/img/inner-project/showcase/showcase-3.jpg";
+import showcase_4 from "/assets/img/inner-project/showcase/showcase-4.jpg";
 
 // slider data
 const slider_data = [

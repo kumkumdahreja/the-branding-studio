@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/logo/logo-white-rotate.png";
-import logo_2 from "@/assets/img/logo/logo-white.png";
+import logo from "/assets/img/logo/logo-white-rotate.png";
+import logo_2 from "/assets/img/logo/logo-white.png";
 import { MenuTwo, UpArrowTwo } from "@/components/svg";
 import MobileOffcanvasTwo from "@/components/offcanvas/mobile-offcanvas-2";
 
@@ -54,7 +54,10 @@ export default function HeaderSeven() {
               </button>
             </div>
             <div className="tp-header-7-btn-box d-none d-md-block">
-              <Link className="tp-btn-white-sm" href="/src/pages/contact/contact.tsx">
+              <Link
+                className="tp-btn-white-sm"
+                href="/src/pages/contact/contact.tsx"
+              >
                 Let’s talk
                 <span>
                   <UpArrowTwo />

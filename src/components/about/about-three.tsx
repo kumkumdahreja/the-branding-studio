@@ -2,11 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal imports
-import shape from '@/assets/img/home-03/about/ab-shape-img.png';
-import { ArrowBg, RightArrowTwo,FirstBracket, FirstBracketTwo } from "../svg";
+import shape from "/assets/img/home-03/about/ab-shape-img.png";
+import { ArrowBg, RightArrowTwo, FirstBracket, FirstBracketTwo } from "../svg";
 
 export default function AboutThree() {
-
   return (
     <div className="tp-about-3-area pt-120 pb-110">
       <div className="container">

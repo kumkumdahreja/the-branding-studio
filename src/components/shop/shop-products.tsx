@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ShopItem from "./shop-item";
 import product_data from "@/data/product-data";
-import prd_banner from "@/assets/img/inner-shop/product/product-1.jpg";
+import prd_banner from "/assets/img/inner-shop/product/product-1.jpg";
 import { IProductDT } from "@/types/product-d-t";
 import ProductModal from "../modal/product-modal";
 import Link from "next/link";
@@ -52,7 +52,10 @@ export default function ShopProducts() {
                 <div className="row">
                   {other_products.map((item) => (
                     <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
-                      <ShopItem product={item} handleProductModal={handleProductModal} />
+                      <ShopItem
+                        product={item}
+                        handleProductModal={handleProductModal}
+                      />
                     </div>
                   ))}
                 </div>

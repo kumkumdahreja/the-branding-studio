@@ -1,25 +1,26 @@
-'use client';
+"use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HeaderMenus from "./header-menus";
 // import { Cart } from "@/components/svg";
-import logo_1 from '@/assets/img/logo/logo.png';
-import logo_2 from '@/assets/img/logo/logo-white.png';
+import logo_1 from "/assets/img/logo/logo.png";
+import logo_2 from "/assets/img/logo/logo-white.png";
 // import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
 import useStickyHeader from "@/hooks/use-sticky-header";
 
 export default function HeaderFour() {
-const {isSticky, headerFullWidth, adjustMenuBackground} = useStickyHeader(20);
+  const { isSticky, headerFullWidth, adjustMenuBackground } =
+    useStickyHeader(20);
   // const [openCartMini, setOpenCartMini] = React.useState(false);
   const [openOffCanvas, setOpenOffCanvas] = React.useState(false);
   useEffect(() => {
     headerFullWidth();
     adjustMenuBackground();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  
+
   return (
     <>
       <header>
